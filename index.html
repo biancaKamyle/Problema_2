@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Problema 2</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Freckle+Face">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="pngwing.com (1).png">
+  </head>
+  <body>
+    <header>
+      <img src="pngwing.com (1).png" alt="Ícone da Física">
+      <h1>Física</h1></header>
+    <main class="paper">
+      <h2>Resolvendo o problema 2</h2>
+      <p>Uma massa “M” g de água (calor específico igual a 1 cal/g°C) são 
+          aquecidos pela absorção de “P”  W de potência na forma de calor. 
+          Considerando 1 cal = 4 J, intervalo de tempo “Tempo”, em segundos  
+          necessário para essa quantidade de água variar sua temperatura em  “T” 
+          °C será de:</p>
+      <p>Coloque os valores de <span class="conta">"M"</span>,
+        <span class="conta">"P"</span> e <span class="conta">"T"</span>
+        abaixo e clique no botão "Resolver!"</p>
+      <section id="dados-do-problema">
+        <label for="m" class="conta">Massa (em gramas): </label>
+        <input id="m" type="number" value="1">
+        <br>
+        <label for="p" class="conta">Potencia (em watts): </label>
+        <input id="p" type="number" value="1">
+        <br>
+        <label for="t" class="conta">Variação de temperatura (em ºC): </label>
+        <input id="t" type="number" value="1">
+        <br>
+        <button id="resolver">Resolver!</button>
+      </section>
+      <section id="passo-a-passo">
+        Passo a passo:
+        <ul>
+          <li>
+            <span class="conta">A potência é definida como a razão entre a quantidade de energia e o tempo:
+             <br> P = E/Δt
+            </span>
+            <li>
+              <span class="conta">O calor é a energia fornecida à água, sendo assim, podemos escrever:
+                <br> P = m.c.Δθ/Δt
+               </span>
+            </li>
+            <span id="asterisco">
+            
+              <li>
+              <span class="conta">*Δθ é a variação de temperatura e Δt é a variação do tempo. </span>
+            </li>
+            <li>
+              <span class="conta">*A unidade W corresponde a J/s. Portanto o calor específico deverá estar
+                 definido em joule, sendo assim o valor utilizado  para o calor específico da água será 4 
+                 J/g.ºC </span>
+                </li>
+              </id></span>
+        </ul>
+      </section>
+      <section id="resultado">
+        Fazendo os calculos:
+        <ul>
+          <li>
+            <span class="conta"><span id="passo-a-passo1">P = M * J * Δθ /Δt </id></span></span>
+          </li>  
+          <li>
+            <span class="conta"><span id="passo-a-passo2">Δt = M * J * Δθ / P </id></span></span>
+          </li>
+        </ul>
+      </section>
+      <section id="resultado">
+        O resultado é:
+        <ul>
+          <li>
+            <span class="conta">Variação de Tempo (em segundos)</span>: <input id="resultado-conta" type="number" disabled>
+        </ul>
+      </section>
+    </main>
+    <script src="JavaScript.js"></script>
+  </body>
+</html>
